@@ -8661,7 +8661,7 @@ h1, h2, h3, h4, h5,
 
 .resume-wrap {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 10px; }
   .resume-wrap .icon {
@@ -8688,6 +8688,12 @@ h1, h2, h3, h4, h5,
   .resume-wrap .position {
     font-size: 18px;
     font-weight: 700;
+    color: #000000; }
+  .resume-wrap .work {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
     color: #000000; }
 
 .ftco-partner {
@@ -8955,8 +8961,6 @@ h1, h2, h3, h4, h5,
       font-size: 12px;
       font-weight: 600; }
     @media (max-width: 767.98px) {
-      .project .text {
-        opacity: 1; }
         .project .text span {
           color: rgba(255, 255, 255, 0.8); } }
   .project:hover .overlay, .project:focus .overlay {
