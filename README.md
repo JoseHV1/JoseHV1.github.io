@@ -9,7 +9,7 @@ En mis practicas personales y proyectos empleo las siguientes skills:
 
 - HTML
 - CSS (Bootstrap, Tailwind)
-- Javascript (Node)
+- Javascript (Angular, Node)
 - PHP (Laravel)
 - Base de Datos (SQL)
 - Git
