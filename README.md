@@ -1,15 +1,14 @@
 
 # 🚀 Hola, Soy Jose Hernandez! 👋
 
+Desarrollador Fullstack, con 3+ años de experiencia en el desarrollo de sistemas web, apasionado por la programacion, innovacion y el constante aprendizaje de forma autodidacta.
 
-Desarrollador Backend Junior, con 2 años de experiencia en el desarrollo de sistemas web, apasionado por la programacion, innovacion y el constante aprendizaje de forma autodidacta.
 ## 🛠 Skills
-
 En mis practicas personales y proyectos empleo las siguientes skills:
 
 - HTML
 - CSS (Bootstrap, Tailwind)
-- Javascript (Node)
+- Javascript (Angular, Node)
 - PHP (Laravel)
 - Base de Datos (SQL)
 - Git
