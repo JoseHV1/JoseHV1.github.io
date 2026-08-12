@@ -1,0 +1,7 @@
+services:
+  front:
+    build:
+      context: .
+    ports:
+      - "3014:80"
+    restart: unless-stopped
