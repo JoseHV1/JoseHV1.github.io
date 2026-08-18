@@ -1,0 +1,10 @@
+# AI assistant tooling (not part of the site)
+.claude/
+.agents/
+skills-lock.json
+
+# Local-only deployment notes
+DEPLOY.md
+
+# OS junk
+.DS_Store

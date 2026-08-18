@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://josehv1.github.io/sitemap.xml
+Sitemap: https://jose-hernandez.dev/sitemap.xml
