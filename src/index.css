@@ -1,0 +1,199 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Dark only: the site is a night sky. Tokens are RGB triplets for use with
+     Tailwind's <alpha-value> placeholder. */
+  --bg: 7 7 10;
+  --surface: 14 14 18;
+  --surface-2: 22 22 26;
+  --fg: 245 245 247;
+  --accent: 252 211 77;
+  --signal: 79 140 255;
+}
+
+html {
+  font-family: "Geist", "Onest", system-ui, sans-serif;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+html,
+body {
+  overflow-x: clip;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  overscroll-behavior: none;
+  background: rgb(var(--bg));
+  color: rgb(var(--fg));
+}
+
+/* Keeps text on the left readable wherever a planet or nebula drifts by. */
+.scene-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgb(var(--bg) / 0.72) 0%, rgb(var(--bg) / 0.4) 38%, transparent 62%);
+}
+@media (max-width: 767px) {
+  .scene-scrim {
+    background: linear-gradient(0deg, rgb(var(--bg) / 0.6) 0%, transparent 55%);
+  }
+}
+
+/* Static backdrop used when the 3D scene is off (no WebGL, reduced motion). */
+.scene-fallback {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(60% 50% at 80% 20%, rgb(var(--accent) / 0.12), transparent 70%),
+    radial-gradient(50% 40% at 10% 90%, rgb(var(--signal) / 0.12), transparent 70%),
+    rgb(var(--bg));
+}
+
+::selection {
+  background: rgb(var(--accent) / 0.35);
+  color: rgb(var(--fg));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Grain overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}
+
+/* Edge fade for marquee */
+.fade-mask {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 8%,
+    black 92%,
+    transparent 100%
+  );
+}
+
+/* Carousel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 96px;
+}
+.carousel-track {
+  display: flex;
+  animation: carousel-scroll 32s linear infinite;
+  width: fit-content;
+  will-change: transform;
+}
+.carousel-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+@keyframes carousel-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    animation: none;
+  }
+}
+
+/* Reveal initial state (GSAP will animate from this) */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  will-change: transform, opacity;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Glow utility */
+.glow-accent {
+  box-shadow: 0 0 0 1px rgba(252, 211, 77, 0.3),
+    0 8px 32px -8px rgba(252, 211, 77, 0.4),
+    0 0 60px -20px rgba(252, 211, 77, 0.5);
+}
+
+/* Glass card */
+.glass {
+  background: rgb(var(--fg) / 0.03);
+  border: 1px solid rgb(var(--fg) / 0.08);
+  backdrop-filter: blur(12px);
+}
+
+/* Magnetic / link underline */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 0.3s ease;
+}
+.link-underline:hover {
+  background-size: 100% 1px;
+}
+
+/* Custom thin scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--fg) / 0.16);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--fg) / 0.3);
+}

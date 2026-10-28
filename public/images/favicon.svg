@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect x="1" y="1" width="62" height="62" rx="14" fill="#0a0a0b" stroke="#26262e" stroke-width="2"/>
+  <circle cx="49" cy="15" r="7" fill="#F59E0B" opacity=".35"/>
+  <circle cx="49" cy="15" r="4.5" fill="#FCD34D"/>
+  <text x="30" y="45" text-anchor="middle" font-family="ui-monospace, 'SF Mono', Menlo, Consolas, monospace" font-size="26" font-weight="700" fill="#F5F5F7" letter-spacing="-1">JH</text>
+</svg>
