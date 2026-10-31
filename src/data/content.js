@@ -39,7 +39,6 @@ export const STACK_GROUPS = [
   { key: "stack_group_auto", items: ["n8n", "Power Automate", "SuiteCRM", "Gemini", "Claude Code", "Prompt Engineering"] },
   { key: "stack_group_tools", items: ["Git", "GitHub", "GitLab", "Figma", "Postman", "Jira", "Scrum"] },
   { key: "stack_group_cloud", items: ["AWS EC2", "S3", "Lambda", "RDS", "VPC"] },
-  { key: "stack_group_learning", items: ["Node.js"] },
 ];
 
 export const EXPERIENCES = [5, 4, 0, 1, 2, 3].map((n) => ({

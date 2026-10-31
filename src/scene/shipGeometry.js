@@ -13,7 +13,7 @@ export const NOZZLE_Z = 3.95; // where the exhaust starts, in the flight frame
 export const NOZZLE_RING = 0.28; // radius of the three-engine cluster
 const NOSE_Z = -4.6;
 
-const AMBER = new Color("#FCD34D");
+const AMBER = new Color("#F59E0B");
 const WARM = new Color("#ffe9a8");
 const BLUE = new Color("#4F8CFF");
 

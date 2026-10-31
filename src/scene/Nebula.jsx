@@ -8,7 +8,7 @@ import { dotTexture } from "./textures";
 // (always off to the right/back, away from the text) and colour.
 const CLOUDS = [
   { u: 0.52, offset: [20, 5, -28], radius: 13, color: "#4F8CFF" },
-  { u: 0.7, offset: [24, 0, -30], radius: 15, color: "#FCD34D" },
+  { u: 0.7, offset: [24, 0, -30], radius: 15, color: "#F59E0B" },
   { u: 0.88, offset: [21, 3, -28], radius: 14, color: "#4F8CFF" },
 ];
 

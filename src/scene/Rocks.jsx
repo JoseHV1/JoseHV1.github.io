@@ -13,7 +13,7 @@ const COVERAGE = 0.9;
 const MAX_POINT_PX = 4.5;
 const SUN = new Vector3(-0.8, 0.3, 0.55).normalize(); // same light as the planets
 const PALETTES = [
-  { dark: "#5a300a", light: "#FCD34D" }, // amber
+  { dark: "#5a300a", light: "#F59E0B" }, // amber
   { dark: "#14307f", light: "#8fb8ff" }, // blue
 ];
 

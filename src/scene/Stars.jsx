@@ -4,7 +4,7 @@ import { AdditiveBlending, Color } from "three";
 import { mulberry32 } from "./math";
 import { glowPointFragment } from "./shaders";
 
-const TINTS = ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#dbe6ff", "#dbe6ff", "#FCD34D", "#4F8CFF"];
+const TINTS = ["#ffffff", "#ffffff", "#ffffff", "#ffffff", "#dbe6ff", "#dbe6ff", "#F59E0B", "#4F8CFF"];
 const STAR_SIZE = 2.4; // px before device pixel ratio
 
 const vertexShader = /* glsl */ `

@@ -10,7 +10,7 @@ import { dotTexture } from "./textures";
 
 // Palettes inside the site's amber / blue identity.
 const KINDS = {
-  gas: { a: "#9a4a08", b: "#FCD34D", c: "#fff1c2", bands: 14, rim: "#ffd978" },
+  gas: { a: "#9a4a08", b: "#F59E0B", c: "#fff1c2", bands: 14, rim: "#ffd978" },
   giant: { a: "#0d2260", b: "#3a6ee0", c: "#9ec1ff", bands: 11, rim: "#6fa0ff" },
 };
 const SUN = new Vector3(-0.8, 0.3, 0.55).normalize(); // light comes from the flight line's side

@@ -10,7 +10,7 @@
   --surface: 14 14 18;
   --surface-2: 22 22 26;
   --fg: 245 245 247;
-  --accent: 252 211 77;
+  --accent: 245 158 11;
   --signal: 79 140 255;
 }
 
@@ -163,9 +163,9 @@ body {
 
 /* Glow utility */
 .glow-accent {
-  box-shadow: 0 0 0 1px rgba(252, 211, 77, 0.3),
-    0 8px 32px -8px rgba(252, 211, 77, 0.4),
-    0 0 60px -20px rgba(252, 211, 77, 0.5);
+  box-shadow: 0 0 0 1px rgba(245,158,11, 0.3),
+    0 8px 32px -8px rgba(245,158,11, 0.4),
+    0 0 60px -20px rgba(245,158,11, 0.5);
 }
 
 /* Glass card */

@@ -51,7 +51,7 @@ export default function Header() {
             aria-label="Home"
             className="ml-2 flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-fg/80 hover:text-fg"
           >
-            <span className="size-2 rounded-full bg-accent shadow-[0_0_8px_rgba(252,211,77,0.8)]" />
+            <span className="size-2 rounded-full bg-accent shadow-[0_0_8px_rgba(245,158,11,0.8)]" />
             JH
           </a>
           <ul className="hidden items-center md:flex">

@@ -22,7 +22,7 @@ export default function ScrollRail() {
       <div className="relative h-full w-px bg-fg/10">
         <span
           style={{ top: `${progress * 100}%` }}
-          className="absolute -left-[3px] size-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(252,211,77,0.8)] transition-[top] duration-100"
+          className="absolute -left-[3px] size-1.5 rounded-full bg-accent shadow-[0_0_8px_rgba(245,158,11,0.8)] transition-[top] duration-100"
         />
       </div>
     </div>

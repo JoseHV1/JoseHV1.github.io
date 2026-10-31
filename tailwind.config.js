@@ -17,8 +17,8 @@ export default {
           500: "#26262e",
         },
         accent: {
-          DEFAULT: "#FCD34D",
-          glow: "#F59E0B",
+          DEFAULT: "#F59E0B",
+          glow: "#D97706",
         },
         signal: "rgb(var(--signal) / <alpha-value>)",
       },
@@ -41,8 +41,8 @@ export default {
       },
       keyframes: {
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 0 0 rgba(252,211,77,0.5)" },
-          "50%": { boxShadow: "0 0 0 12px rgba(252,211,77,0)" },
+          "0%, 100%": { boxShadow: "0 0 0 0 rgba(245,158,11,0.5)" },
+          "50%": { boxShadow: "0 0 0 12px rgba(245,158,11,0)" },
         },
       },
     },
