@@ -22,6 +22,16 @@ export default function App() {
   const [tier, setTier] = useState(detectTier);
   const immersive = tier !== "off";
   const disableScene = () => setTier("off");
+  // The 3D chunk (~1 MB) waits until the page has loaded and the browser is idle,
+  // so it never competes with the text for the first paint.
+  const [sceneReady, setSceneReady] = useState(false);
+
+  useEffect(() => {
+    const start = () => (window.requestIdleCallback ?? setTimeout)(() => setSceneReady(true), { timeout: 2000 });
+    if (document.readyState === "complete") start();
+    else window.addEventListener("load", start, { once: true });
+    return () => window.removeEventListener("load", start);
+  }, []);
 
   // Section heights change with the language and the tier; triggers must follow.
   useEffect(() => {
@@ -38,7 +48,7 @@ export default function App() {
       {immersive ? (
         <SceneBoundary onFail={disableScene}>
           <Suspense fallback={null}>
-            <Scene tier={tier} onFail={disableScene} onSlow={disableScene} />
+            {sceneReady && <Scene tier={tier} onFail={disableScene} onSlow={disableScene} />}
           </Suspense>
         </SceneBoundary>
       ) : (

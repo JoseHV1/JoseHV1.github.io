@@ -49,7 +49,7 @@ export default function Header() {
           <a
             href="#hero"
             aria-label="Home"
-            className="ml-2 flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-fg/80 hover:text-fg"
+            className="-my-2 ml-2 flex items-center gap-2 py-2 font-mono text-xs uppercase tracking-widest text-fg/80 hover:text-fg"
           >
             <span className="size-2 rounded-full bg-accent shadow-[0_0_8px_rgba(245,158,11,0.8)]" />
             JH

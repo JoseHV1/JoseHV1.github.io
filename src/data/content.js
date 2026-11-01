@@ -37,7 +37,7 @@ export const STACK_GROUPS = [
     items: ["Laravel", "PHP", "Angular", "TypeScript", "Vue", "Livewire", "NestJS", "WordPress", "MySQL", "PostgreSQL", "MongoDB", "REST APIs"],
   },
   { key: "stack_group_auto", items: ["n8n", "Power Automate", "SuiteCRM", "Gemini", "Claude Code", "Prompt Engineering"] },
-  { key: "stack_group_tools", items: ["Git", "GitHub", "GitLab", "Figma", "Postman", "Jira", "Scrum"] },
+  { key: "stack_group_tools", items: ["Git", "GitHub", "GitLab", "Docker", "Figma", "Postman", "Jira", "Scrum"] },
   { key: "stack_group_cloud", items: ["AWS EC2", "S3", "Lambda", "RDS", "VPC"] },
 ];
 
@@ -47,3 +47,13 @@ export const EXPERIENCES = [5, 4, 0, 1, 2, 3].map((n) => ({
   title: `title_exp${n}`,
   description: `description_exp${n}`,
 }));
+
+export const PROJECTS = [
+  { id: "midoctor", title: "Mi Doctor PR", urlProject: "https://midoctorpr.com/", categories: ["Software", "Health"] },
+  { id: "yorkdaleford", title: "Yorkdale Ford", urlProject: "https://yorkdaleford.com/", categories: ["Website", "Vehicles"] },
+  { id: "capitaldodge", title: "Capital Dodge", urlProject: "https://capitaldodge.ca/", categories: ["Website", "Vehicles"] },
+  { id: "netwey", title: "Netwey", urlProject: "https://site.netwey.com.mx/", categories: ["Website"] },
+  { id: "multiservicios", title: "Multiservicios", urlProject: "https://multiservicios.com.es/", categories: ["Website", "Services"] },
+  { id: "mymasterbook", title: "MyMasterBook", urlProject: "https://mymasterbook.net/", categories: ["Software"] },
+  { id: "skillgro", title: "SkillGro", urlProject: "https://telas.online/", categories: ["Website", "Education"] },
+];

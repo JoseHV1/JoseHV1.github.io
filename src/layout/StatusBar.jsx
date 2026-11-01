@@ -47,7 +47,7 @@ export default function StatusBar() {
   return (
     <div
       aria-hidden="true"
-      className="pointer-events-none fixed inset-x-0 top-16 z-20 hidden md:top-20 md:block"
+      className="pointer-events-none fixed inset-x-0 top-16 z-20 hidden lg:top-20 lg:block"
     >
       <div className="mx-auto flex w-full max-w-5xl items-center justify-end px-4 font-mono text-[10px] uppercase tracking-[0.3em] text-fg/45">
         <div className="flex items-center gap-3">

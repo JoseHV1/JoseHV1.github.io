@@ -78,7 +78,7 @@ export default function Hero() {
             </a>
             <a
               href="#process"
-              className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-fg/60 transition hover:text-fg"
+              className="-my-2 inline-flex items-center gap-2 py-2 font-mono text-xs uppercase tracking-widest text-fg/60 transition hover:text-fg"
             >
               {t("hero_scroll")}
               <span aria-hidden>↓</span>

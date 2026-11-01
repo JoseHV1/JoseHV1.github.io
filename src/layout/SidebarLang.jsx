@@ -3,7 +3,7 @@ import { useLanguage } from "../hooks/useLanguage";
 
 export default function SidebarLang() {
   const { t } = useTranslation();
-  const { changeLanguage, supported, labels } = useLanguage();
+  const { language, changeLanguage, supported, labels } = useLanguage();
 
   return (
     <div className="px-3 py-2">
@@ -16,7 +16,10 @@ export default function SidebarLang() {
             key={code}
             type="button"
             onClick={() => changeLanguage(code)}
-            className="flex-1 rounded-lg border border-fg/10 px-3 py-2 text-sm transition hover:bg-fg/10"
+            aria-pressed={code === language}
+            className={`flex-1 rounded-lg border px-3 py-2 text-sm transition hover:bg-fg/10 ${
+              code === language ? "border-accent/60 text-accent" : "border-fg/10"
+            }`}
           >
             {t(labels[code])}
           </button>

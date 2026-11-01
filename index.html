@@ -5,50 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
+    <!-- Hides the crawler-facing static copy (see scripts/seo-static.mjs) as soon as JS runs. -->
+    <script>document.documentElement.classList.add("js")</script>
+
     <!-- Primary -->
-    <title>José Hernández · Full Stack Developer</title>
+    <title>José Hernández · Senior Full Stack & Automation Engineer</title>
     <meta
       name="description"
-      content="José Hernández — desarrollador full stack con más de 5 años de experiencia en Laravel, Angular y TypeScript. Optimización de sistemas legacy, automatizaciones con n8n y desarrollo asistido por IA."
+      content="Senior Full Stack & Automation Engineer con +5 años en Laravel, Angular, NestJS y AWS. Automatizaciones con n8n e IA, sistemas legacy y plataformas en producción."
     />
     <meta
       name="keywords"
-      content="José Hernández, jose hernandez, full stack developer, desarrollador full stack, laravel, angular, typescript, php, vue, nest, wordpress, n8n, power automate, portafolio, Venezuela, remote developer"
+      content="José Hernández, jose hernandez, full stack developer, automation engineer, desarrollador full stack, laravel, angular, nestjs, typescript, php, aws, n8n, power automate, automatizaciones con IA, portafolio, Venezuela, remote developer"
     />
     <meta name="author" content="José Hernández" />
-    <meta name="copyright" content="José Hernández" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
-    <meta name="googlebot" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
     <meta name="theme-color" content="#07070a" />
     <meta name="color-scheme" content="dark" />
     <link rel="canonical" href="https://jose-hernandez.dev/" />
+    <link rel="alternate" type="text/plain" href="https://jose-hernandez.dev/llms.txt" title="LLM-readable profile" />
 
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg?v=%VITE_BUILD_ID%" />
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png?v=%VITE_BUILD_ID%" />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="profile" />
     <meta property="og:site_name" content="José Hernández" />
-    <meta property="og:title" content="José Hernández · Full Stack Developer" />
+    <meta property="og:title" content="José Hernández · Senior Full Stack & Automation Engineer" />
     <meta
       property="og:description"
-      content="Cómo construyo software: proceso, IA y automatización. Laravel, Angular, TypeScript, n8n y Power Automate."
+      content="Laravel, Angular, NestJS y AWS. Automatizaciones con n8n e IA, sistemas legacy y plataformas en producción."
     />
     <meta property="og:url" content="https://jose-hernandez.dev/" />
-    <meta property="og:image" content="https://jose-hernandez.dev/images/jose.png" />
-    <meta property="og:image:alt" content="Retrato de José Hernández" />
+    <meta property="og:image" content="https://jose-hernandez.dev/images/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="José Hernández, Senior Full Stack & Automation Engineer" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:locale:alternate" content="en_US" />
+    <meta property="profile:first_name" content="José" />
+    <meta property="profile:last_name" content="Hernández" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="José Hernández · Full Stack Developer" />
+    <meta name="twitter:title" content="José Hernández · Senior Full Stack & Automation Engineer" />
     <meta
       name="twitter:description"
-      content="Cómo construyo software: proceso, IA y automatización."
+      content="Laravel, Angular, NestJS y AWS. Automatizaciones con n8n e IA, sistemas legacy y plataformas en producción."
     />
-    <meta name="twitter:image" content="https://jose-hernandez.dev/images/jose.png" />
+    <meta name="twitter:image" content="https://jose-hernandez.dev/images/og-image.jpg" />
 
     <!-- Performance: connections & fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -77,21 +83,47 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "José Hernández",
-        "url": "https://jose-hernandez.dev/",
-        "image": "https://jose-hernandez.dev/images/jose.png",
-        "jobTitle": "Full Stack Developer",
-        "description": "Desarrollador full stack: Laravel, Angular y TypeScript, optimización de sistemas legacy y automatizaciones con n8n.",
-        "knowsAbout": ["Laravel", "PHP", "Angular", "TypeScript", "Vue.js", "Livewire", "NestJS", "WordPress", "MySQL", "n8n", "Microsoft Power Automate"],
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Altagracia de Orituco",
-          "addressCountry": "VE"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/jose-hernandez01",
-          "https://github.com/JoseHV1"
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://jose-hernandez.dev/#website",
+            "url": "https://jose-hernandez.dev/",
+            "name": "José Hernández",
+            "inLanguage": ["es", "en"]
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://jose-hernandez.dev/#profile",
+            "url": "https://jose-hernandez.dev/",
+            "isPartOf": { "@id": "https://jose-hernandez.dev/#website" },
+            "mainEntity": { "@id": "https://jose-hernandez.dev/#person" }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://jose-hernandez.dev/#person",
+            "name": "José Hernández",
+            "url": "https://jose-hernandez.dev/",
+            "image": "https://jose-hernandez.dev/images/jose.jpg",
+            "email": "mailto:devjh19@gmail.com",
+            "jobTitle": "Senior Full Stack & Automation Engineer",
+            "description": "Full Stack Developer con más de 5 años de experiencia en Laravel, Angular, NestJS y AWS. Lidera automatizaciones con n8n e IA y optimiza sistemas legacy.",
+            "worksFor": [
+              { "@type": "Organization", "name": "Leadbox", "url": "https://leadboxhq.com/" },
+              { "@type": "Organization", "name": "QSM (Quantum Spot Media)" }
+            ],
+            "alumniOf": {
+              "@type": "CollegeOrUniversity",
+              "name": "Universidad Politécnica Territorial de los Llanos Juana Ramírez"
+            },
+            "knowsAbout": ["Laravel", "PHP", "Angular", "TypeScript", "NestJS", "Vue.js", "Livewire", "WordPress", "MySQL", "PostgreSQL", "MongoDB", "AWS", "Docker", "n8n", "Microsoft Power Automate", "SuiteCRM", "AI automation"],
+            "knowsLanguage": ["es", "en"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Altagracia de Orituco",
+              "addressCountry": "VE"
+            },
+            "sameAs": ["https://www.linkedin.com/in/jose-hernandez01", "https://github.com/JoseHV1"]
+          }
         ]
       }
     </script>
@@ -101,6 +133,10 @@
         font-family: "Geist", "Onest", system-ui, sans-serif;
         background: #07070a;
       }
+      /* Static copy for crawlers and no-JS visitors; React replaces it. */
+      .prerender { max-width: 48rem; margin: 0 auto; padding: 4rem 1rem; color: #f5f5f7; line-height: 1.6; }
+      .prerender a { color: #f59e0b; }
+      .js .prerender { display: none; }
     </style>
   </head>
   <body>

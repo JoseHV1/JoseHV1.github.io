@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const STORAGE_KEY = "lang";
-const DEFAULT_LANG = "en";
 const SUPPORTED = ["en", "es"];
 
 const LANGUAGE_LABELS = {
@@ -13,7 +12,7 @@ const LANGUAGE_LABELS = {
 export function useLanguage() {
   const { i18n } = useTranslation();
   const [language, setLanguage] = useState(
-    () => localStorage.getItem(STORAGE_KEY) ?? DEFAULT_LANG
+    () => localStorage.getItem(STORAGE_KEY) ?? i18n.language
   );
 
   useEffect(() => {

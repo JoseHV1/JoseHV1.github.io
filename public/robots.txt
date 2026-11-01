@@ -1,4 +1,21 @@
+# Search engines and AI assistants are welcome to read and cite this site.
 User-agent: *
 Allow: /
 
+# AI crawlers, listed explicitly so no default policy blocks them.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: meta-externalagent
+Allow: /
+
+# LLM-readable summary: https://jose-hernandez.dev/llms.txt
 Sitemap: https://jose-hernandez.dev/sitemap.xml

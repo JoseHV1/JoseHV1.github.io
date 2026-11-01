@@ -10,7 +10,8 @@ i18next
     supportedLngs: ["en", "es"],
     ns: ["lang"],
     defaultNS: "lang",
-    lng: localStorage.getItem("lang") ?? "en",
+    // a saved choice wins; otherwise follow the browser (Spanish speakers get Spanish)
+    lng: localStorage.getItem("lang") ?? (navigator.language?.toLowerCase().startsWith("es") ? "es" : "en"),
     interpolation: { escapeValue: false },
     backend: { loadPath: `locales/{{lng}}/{{ns}}.json?v=${import.meta.env.VITE_BUILD_ID}` },
   });
