@@ -41,7 +41,8 @@ export const STACK_GROUPS = [
   { key: "stack_group_cloud", items: ["AWS EC2", "S3", "Lambda", "RDS", "VPC"] },
 ];
 
-export const EXPERIENCES = [5, 4, 0, 1, 2, 3].map((n) => ({
+// Leadbox (exp5) is hidden for now; its copy stays in the locales.
+export const EXPERIENCES = [4, 0, 1, 2, 3].map((n) => ({
   id: `exp${n}`,
   date: `date_exp${n}`,
   title: `title_exp${n}`,
