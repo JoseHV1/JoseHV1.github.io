@@ -51,8 +51,6 @@ export const EXPERIENCES = [4, 0, 1, 2, 3].map((n) => ({
 
 export const PROJECTS = [
   { id: "midoctor", title: "Mi Doctor PR", urlProject: "https://midoctorpr.com/", categories: ["Software", "Health"] },
-  { id: "yorkdaleford", title: "Yorkdale Ford", urlProject: "https://yorkdaleford.com/", categories: ["Website", "Vehicles"] },
-  { id: "capitaldodge", title: "Capital Dodge", urlProject: "https://capitaldodge.ca/", categories: ["Website", "Vehicles"] },
   { id: "netwey", title: "Netwey", urlProject: "https://site.netwey.com.mx/", categories: ["Website"] },
   { id: "multiservicios", title: "Multiservicios", urlProject: "https://multiservicios.com.es/", categories: ["Website", "Services"] },
   { id: "mymasterbook", title: "MyMasterBook", urlProject: "https://mymasterbook.net/", categories: ["Software"] },

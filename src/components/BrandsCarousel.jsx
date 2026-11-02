@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 
 const BRANDS = [
   { name: "Grupo GDA", logo: "images/grupogda.png", invert: true },
-  { name: "Leadbox", logo: "images/leadbox.svg" },
   { name: "Netwey", logo: "images/netwey.svg" },
   // dark artwork: inverted so it reads on the dark page
   { name: "Quantum Spot Media", logo: "images/qsm.png", invert: true },
