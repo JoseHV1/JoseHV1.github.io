@@ -34,7 +34,7 @@ export const CASES = [
 export const STACK_GROUPS = [
   {
     key: "stack_group_prod",
-    items: ["Laravel", "PHP", "Angular", "TypeScript", "Vue", "Livewire", "NestJS", "WordPress", "MySQL", "PostgreSQL", "MongoDB", "REST APIs"],
+    items: ["Laravel", "PHP", "Angular", "Svelte", "TypeScript", "Vue", "Livewire", "NestJS", "WordPress", "MySQL", "PostgreSQL", "MongoDB", "REST APIs"],
   },
   { key: "stack_group_auto", items: ["n8n", "Power Automate", "SuiteCRM", "Gemini", "Claude Code", "Prompt Engineering"] },
   { key: "stack_group_tools", items: ["Git", "GitHub", "GitLab", "Docker", "Figma", "Postman", "Jira", "Scrum"] },
